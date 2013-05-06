@@ -1,0 +1,37 @@
+.wrapper{
+	margin:0 auto;
+	width:960px;
+	
+}
+.header {
+	
+	border:0px solid black;
+}
+h1 {
+font-size:100px;
+margin:0;
+text-align:center;
+font-family:helvetica;		
+}
+h2{
+font-family:helvetica;
+text-align:center;
+	
+}
+li {
+	margin-bottom:10px;
+}
+
+.story {
+	width:500px;
+	float:left;
+	padding:30px;
+	font-size:16px;
+	line-height:24px;
+}
+
+.sidebar {
+	width:400px;
+	float:left;
+	margin-top:40px;
+}
