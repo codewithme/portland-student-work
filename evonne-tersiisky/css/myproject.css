@@ -1,0 +1,56 @@
+div.box {
+	width:470px;
+	padding:10px;
+	margin:30px;
+	background-color:rgba(229, 231, 221, 0.23); 
+  
+	
+
+}
+div.timedate {
+	color:red;
+	text-align:center;
+	font-size:24px; 
+	width:25%;
+	background-color:white;
+	background-position:center;
+	border:1.5px solid black;
+
+}
+div.content {
+	width:95%;
+	margin:auto;
+	margin-top:20px;
+	font-size:23px;
+}
+
+.box img {
+	max-height:250px;
+}
+
+body {
+	font-family: 'Pontano Sans', sans-serif;	
+}
+.bump-top2 {
+	margin-top:20px;
+}
+.bump-top {
+	margin-top:10px;
+}
+div.caption {
+	font-size:18px
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.videobox h2
+{ display:none;}
