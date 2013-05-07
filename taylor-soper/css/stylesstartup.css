@@ -1,0 +1,50 @@
+.add{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	margin: 3px;
+	padding: 0px;
+}
+#map { height: 350px; width: 650px; }
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+li {
+	margin: 3px;
+	padding: 5px;    
+	border: 3px solid black;
+	float: left;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.blue {
+	background-color:#0DAEFF;
+	
+}
+.yellow{
+	background-color:#FFDC00;
+}
+.green{
+	background-color:#0CE81E;
+	
+}
+.purple{
+	background-color:#EF0DFF;
+	
+}
+.orange{
+	background-color:#E84D00;
+	
+
+}
+.leaflet-popup .name{
+	
+ font-family: Copperplate, "Copperplate Gothic Light", fantasy;}
+
+ 
