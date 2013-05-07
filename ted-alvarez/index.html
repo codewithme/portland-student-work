@@ -2,29 +2,39 @@
 	<head>
 		<title>Climate Disaster Map of the U.S.</title>
 		<link rel="stylesheet" href="css/project.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<h1>America: Fucked, Yeah?</h1>
-		<p>Last summer, record high temps across the country unleashed the Horsemen of the Apocalypse in the form of catastrophic wildfires, crop-crippling droughts, and vicious superstorms. Hold on to your butts: This year will probably be worse. In an effort to know (and track) the enemy, we present this disaster map, updated as the shit goes down.</p> 
-		<div id="canvas"> <!-- here is where map will go --> </div>
-		<div id="key"> <ul>
-			<li>Wildfires</li>
-			<li>Droughts</li>
-			<li>Storms</li>
-			<li>Flood</li></ul>
+		<p class="intro-text">Last summer, record high temps across the country unleashed the Horsemen of the Apocalypse in the form of catastrophic wildfires, crop-crippling droughts, and vicious superstorms. Hold on to your butts: This year will probably be worse. In an effort to know (and track) the enemy, we present this disaster map, updated as the shit goes down.</p> 
+		<div id="key"> 
+			<ul>
+				<li id="wildfire-button">Wildfires</li>
+				<li>Droughts</li>
+				<li>Storms</li>
+				<li>Flood</li>
+			</ul>
 		</div>
-		<div id="Incidents"> <!-- here is where disaster key will go --> 
-			<ul><li>Ventura, CA Fire
+
+		<div id="canvas">
+			<ul id="incidents">
+				<li id="ventura" class="fire">
 					<span class="title">Ventura Fire</span>
 					<span class="location">Ventura, CA</span>
 					<span class="description">Ventura's TK-crazy-acre fire cut through a swath of canyons all the way to the PCH.</span>
 					<span class="rating">8</span>
 				</li>
-				<li>Tehama, CA Fire</li>
-				<li>Hays, Kansas, Drought</li>
-				<li>Superstorm Sandy</li></ul>
+				<li id="tehama" class="fire">
+					<span class="title">Title TBA</span>
+					<span class="location">Location tba</span>
+					<span class="description">descriptive text TBA</span>
+					<span class="rating">8</span>
+				</li> 
+			</ul>
 
 		</div>
+		
 
 
 	</body>

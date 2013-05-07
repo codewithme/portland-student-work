@@ -1,4 +1,11 @@
-h1	{
+h1 {
+	color: rgb(22, 134, 187); 
+	font-family: AntennaCond;
+	font-size: 48px;
+	text-align: center;
+}
 
-	font-family: Arial;
+body{
+	background-color:#F5FFFA;
+	font-family: AntennaCond, sans-serif;
 }

@@ -1,0 +1,95 @@
+h1 {
+	color: rgb(22, 134, 187); 
+	font-family: AntennaCond;
+	font-size: 48px;
+	text-align: left;
+}
+
+body{
+	background-color:#F5FFFA;
+	font-family: AntennaCond, sans-serif;
+	font-weight: normal;
+}
+.map {
+	width:800px;
+	padding:2px;
+	margin:2px;
+}
+.intro-text	{
+	width:800px;
+} 
+/* this section sets size and position of map as main img */
+#canvas {
+	background-image: url('../images/us_map_project.jpg') ;
+	background-repeat:	no-repeat;
+	width: 804px;
+	height:582px;
+	float: left;
+	position: relative;
+	
+}
+/* fire icon displays at all times on the map */
+.fire {
+	background: url('../images/flame_icon.png') no-repeat top left;
+
+/*this sets the size of the fire icon */	
+}
+#incidents li {
+	list-style-type: none;
+	position:absolute;
+	width:40px;
+	height: 40px;
+	
+}
+/* this hides the desriptive text when not hovering over icon*/
+
+#incidents li span {
+	display: none;
+
+}
+/* this determines size, shape, attributes of descriptive text when cursor hovers over fire icon */
+
+#incidents li:hover {
+	border: 2px solid black;
+	background-color: white;
+	width: 200px;
+	height: auto;
+	padding-left: 35px;
+	padding-top: 15px;
+	padding-right: 4px;
+	margin-right: 20px;
+
+}
+/* this exposes descriptive text when cursor hovers over fire icon */
+
+#incidents li:hover span {
+display:block;
+
+
+/*this determines position of ventura fire */
+}
+#ventura {
+	left:52px;
+	top:271px;
+}
+/* this determines positions of Tehama fire */
+
+#tehama {
+	left:16px;
+	top:165;
+}
+
+#key {
+
+	float: left;
+	width: 100px;
+	padding-right: 8px;
+}
+
+
+
+
+
+
+
+
