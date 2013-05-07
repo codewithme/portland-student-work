@@ -1,0 +1,152 @@
+body {
+	font-family: Volkhov, serif;
+	line-height: 15px;
+	}
+
+/*spacing & positioning stuff */
+
+#leftcolumn {
+	width: 600px;
+	float: left;
+	margin-right: 50px;
+	margin-left: 20px;
+	font-size: 15px;
+	
+
+	}
+
+#map {
+	border: 1px solid black;
+	height: 300px;
+	margin-top: 50px;
+
+	
+	}
+
+#info {
+	padding: 5px;
+	text-align: center;
+}
+
+#feed {
+	height: 500px;
+	padding: none;
+	text-align: left;
+	}
+
+#sidebar {
+	width: 300px;
+	border: 1px solid black;
+	float: left;
+	padding: 25px;
+	margin-top: 420px;
+	padding: 5px;
+	line-height: 15px;
+	}
+
+ul {
+	list-style-type: none;
+	padding: 5px;
+	margin: 0px;
+	line-height: 15px;
+}
+
+li {
+	line-height: 10px;
+	margin-bottom: 40px;
+
+	}
+
+.mug {
+	width: 100px;
+	height: 150px;
+	float: left;
+	padding: 5px;
+	border: 1px solid black;
+	}
+
+.bio {
+	float: left;
+	width: 150px;
+	padding: 10px;
+	border: 1px solid black;
+	font-size: 10px;
+	line-height: 10px;
+	}
+	
+.person {
+	height: 200px;
+	}
+
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.hidden {
+	display: none;
+	}
+
+.explanation {
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*typography*/
+	
+a:link {
+	color: black;
+	}
+
+a:hover {
+	color: #68A1C6;
+}
+
+a:visited: {
+	color: black;
+}
+
+h1 {
+	font-size: 30px;
+	color: #68A1C6;
+	}
+
+h2 { 
+	font-size: 20px;
+	color: black;
+	font-weight: normal;
+
+}
+
+
+h3 {
+	font-size: 15px;
+	color: black;
+	}
+
+li {
+	
+	color: black;
+
+	}
+
+.meeting {
+	font-size: 15px;
+	line-height: 10px;
+	}
+
+
+
+
+	

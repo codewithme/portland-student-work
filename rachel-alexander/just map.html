@@ -1,0 +1,53 @@
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple Markers</title> 
+  <script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
+</head> 
+<body>
+  <div id="map" style="width: 500px; height: 400px;"></div>
+
+  <script type="text/javascript">
+    var locations = [
+      ['Port of Walla Walla', 'date', 'place', 46.090258,-118.279023, 4],
+      ['Walla Walla County Commissioners', 'date', 'place', 46.06546,-118.344254, 5],
+      ['Walla City Council', 'date', 'place', 46.067008,-118.341722, 3],
+      ['City of College Place', 'date', 'place', 46.043212,-118.387213, 2],
+      ['Walla Walla School Board', 'date', 'place', 46.065445,-118.328826, 1],
+	  ['Touchet School Board', 'date', 'place', 46.043227,-118.670068, 6],
+	  ['College Place School Board', 'date', 'place', 46.031132,-118.388672, 7],
+	  ['Dixie School Board', 'date', 'place', 46.142318,-118.149269, 8],
+	  ['Waitsburg School Board', 'date', 'place', 46.266691,-118.154933, 9],
+	  ['Prescott School Board', 'date', 'place', 46.297329,-118.319235, 10],
+	  ['Burbank School Board', 'date', 'place', 46.201221,-119.015515, 11],
+	  ['Waitsburg City Council', 'date', 'place', 46.270726,-118.154569, 12]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(46.138928,-118.374252),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][3], locations[i][4]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+		var html = '<h3 style="font-family:Helvetica">'+locations[i][0]+'</h3><br/><p style="font-family:Helvetica"><strong>Meeting</strong>: '+locations[i][1]+'<br/><strong>Location</strong>: '+ locations[i][2] + '</p>';
+          infowindow.setContent(html);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+</body>
+</html>
