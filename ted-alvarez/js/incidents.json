@@ -1,0 +1,20 @@
+{
+	"incidents": [
+		{
+			"title": "Ventura Fire",
+			"location": "Ventura, California",
+			"description": "Ventura's TK-crazy-acre fire cut through a swath of canyons all the way to the PCH.",
+			"rating": 8,
+			"top": 20,
+			"left": 30
+		},
+		{
+			"title": "",
+			"location": "",
+			"description": "",
+			"rating": 0,
+			"top": 0,
+			"left": 0
+		}
+	]
+}
